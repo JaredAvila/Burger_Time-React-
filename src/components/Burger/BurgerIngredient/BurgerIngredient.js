@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 
 const BurgerIngredient = props => {
   let ingredient = null;
+  //return correct markup for each ingredient case
   switch (props.type) {
     case "bread-bottom":
       ingredient = <div className={classes.breadBottom} />;
