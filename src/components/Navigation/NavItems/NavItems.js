@@ -7,7 +7,7 @@ const NavItems = props => {
   return (
     <ul className={classes.NavItems}>
       <NavItem link="/">Burger Builder</NavItem>
-      <NavItem link="/orders">Orders</NavItem>
+      {props.auth ? <NavItem link="/orders">Orders</NavItem> : null}
       {!props.auth ? (
         <NavItem link="/auth">Login</NavItem>
       ) : (
