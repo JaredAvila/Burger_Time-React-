@@ -117,6 +117,7 @@ class Auth extends Component {
             />
           ))}
           <Button btnType="Success">SUBMIT</Button>
+          <Button btnType="Danger">SWITCH TO SIGN IN</Button>
         </form>
       </div>
     );
